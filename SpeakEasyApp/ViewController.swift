@@ -24,10 +24,10 @@ class ViewController: UIViewController, UIWebViewDelegate, WitDelegate {
   override func viewDidLoad() {
     super.viewDidLoad()
     webView.delegate = self
-    webView.loadRequest(NSURLRequest(URL: NSURL(string: "http://news.ycombinator.com")!))
+    webView.loadRequest(NSURLRequest(URL: NSURL(string: "http://en.m.wikipedia.org")!))
     addMicButton()
     wit.delegate = self
-    wit.setContext(["state" : "news.ycombinator.com"])
+    wit.setContext(["state" : "http://en.m.wikipedia.org"])
     overlay.alpha = 0.5
     overlay.hidden = true
   }
@@ -92,7 +92,7 @@ class ViewController: UIViewController, UIWebViewDelegate, WitDelegate {
     if outcomes != nil {
       let outcome: NSDictionary = outcomes[0] as! NSDictionary
       println(outcome)
-      // handleOutcome(outcome)
+      handleOutcome(outcome)
       
     } else {
       println("BALLS")
