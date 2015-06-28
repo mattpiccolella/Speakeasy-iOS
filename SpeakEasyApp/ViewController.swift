@@ -31,7 +31,7 @@ class ViewController: UIViewController, UIWebViewDelegate, WitDelegate {
   
   func addMicButton() {
     let size: CGSize = view.frame.size
-    let buttonFrame: CGRect = CGRectMake((size.width / 2.0) - 25.0, size.height - 70.0, 50.0, 50.0)
+    let buttonFrame: CGRect = CGRectMake((size.width / 2.0) - 37.5, size.height - 95.0, 75.0, 75.0)
     let micButton: WITMicButton = WITMicButton(frame: buttonFrame)
     view.addSubview(micButton)
   }
