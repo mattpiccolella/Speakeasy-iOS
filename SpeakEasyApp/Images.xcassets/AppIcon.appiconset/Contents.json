@@ -19,21 +19,20 @@
       "scale" : "2x"
     },
     {
-      "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "Sample-icon-120-1.png",
+      "size" : "40x40",
       "scale" : "3x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "Sample-icon-120.png",
+      "filename" : "chromeai_120px.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "Sample-icon-180.png",
+      "filename" : "chromeai_180px.png",
       "scale" : "3x"
     }
   ],
