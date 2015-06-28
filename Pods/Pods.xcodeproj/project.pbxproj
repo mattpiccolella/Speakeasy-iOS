@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05078CC2F85EF8D30C3096D5 /* WITRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = E16F53D41F2825C93DFEB3E9 /* WITRecorder.m */; };
+		07F0AB3D2C0D57C6C07A821E /* RecordingSessionStarter.h in Headers */ = {isa = PBXBuildFile; fileRef = 96D39AE3E4EE6342ADA45087 /* RecordingSessionStarter.h */; };
+		0BCE05F9280F12EA336541AC /* WITVad.m in Sources */ = {isa = PBXBuildFile; fileRef = 516D01177F1E9CC44573DA67 /* WITVad.m */; };
+		0FF0083A3AEA0A801CBA17B7 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = B0C8C02254F3AC2DDD914835 /* util.h */; };
+		1921AE37B7445464BDB63F1A /* WITState.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98A2375E8C5F6F077F5106 /* WITState.m */; };
+		1D6E5E72E545FF2CFFB0DA4B /* WITVadTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 97E1D6E7A9CCBC9627E89306 /* WITVadTracker.h */; };
+		1DF13CF56558D53A9761FF65 /* WITRecordingSession.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FBF7E762674CEFCB3467FC /* WITRecordingSession.m */; };
+		2B98C8284A6E6481EC232258 /* util.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C27C453AFE4F115CC4C26D /* util.m */; };
+		37710E81AC6D1936260E5BC6 /* WITVadTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = A1469DBBEF05B5AC7BBB05A6 /* WITVadTracker.m */; };
+		3CEDF68ED783A7A6ED7FC7CA /* WitPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = D34A46C0231DDC443C4A1B07 /* WitPrivate.h */; };
+		3EC9AE15564FBA70E975D351 /* WITCircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 633536E639213C78C9DB0C29 /* WITCircleView.h */; };
+		44683B68136CBA61131E1953 /* WITVadSimple.h in Headers */ = {isa = PBXBuildFile; fileRef = 7195B4A2C9A8EF36AF5C6019 /* WITVadSimple.h */; };
+		582EEA262AF103430E2A5FEA /* WITContextSetter.h in Headers */ = {isa = PBXBuildFile; fileRef = A48D5AB9A96F49C37E7A845F /* WITContextSetter.h */; };
+		59AAAA75E85F10FC40D9408B /* Wit.h in Headers */ = {isa = PBXBuildFile; fileRef = 17BE03E4F7CBA5F7F178B071 /* Wit.h */; };
+		5B06C8965C11B75D319E78F9 /* Pods-SpeakEasyApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FBD58BD7D2BAD5928A1398 /* Pods-SpeakEasyApp-dummy.m */; };
+		607CAF565E3595447033E085 /* WITVadSimple.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1348B774BCE603E1EEAA83 /* WITVadSimple.m */; };
+		6461E8D9BB44B3F65E63AE06 /* WITUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = B52F8B53041DE26D957C797C /* WITUploader.m */; };
+		679683C751F7789854F0C85B /* WITCircleLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F48D7601F1338623A103DFF /* WITCircleLayer.h */; };
+		69C039F524BDAA3A3A12EE7C /* WITCircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB9ACF53BA62360BF62DFB9 /* WITCircleLayer.m */; };
+		6F6C15DEB8695427730A5BE9 /* WITContextSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCF55E51D526E67AFD489CC /* WITContextSetter.m */; };
+		7905BA29BEB47246B5A09BDB /* WITUploader.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AF9FA19DE72713497351B39 /* WITUploader.h */; };
+		7FB714F42B2C31CF9C739BEF /* WITVadConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = A9000341359D1B114243EDFC /* WITVadConfig.h */; };
+		80814DF9DFB1421D8C633F02 /* WITRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C3655D2A23D5C202652176 /* WITRecorder.h */; };
+		8DC602B9BE1E47C2A085A561 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF8F7D2179BDB4A49E3DF36 /* Foundation.framework */; };
+		8F9277827F24AA0B2DA4FACC /* WITMicButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 159720762E71AD4428AA9582 /* WITMicButton.m */; };
+		9302A20AAC29936F218B7E74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF8F7D2179BDB4A49E3DF36 /* Foundation.framework */; };
+		AA9B840FA9CAAC0A69432EF6 /* WITState.h in Headers */ = {isa = PBXBuildFile; fileRef = A466A42E998532672310B702 /* WITState.h */; };
+		BD871CDB949036B98FED7270 /* Pods-SpeakEasyApp-Wit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B2941C32099348B675D164 /* Pods-SpeakEasyApp-Wit-dummy.m */; };
+		C3E9E7D40ECD4AD8E4F15A7F /* Wit.m in Sources */ = {isa = PBXBuildFile; fileRef = CC50AC72FC53A34F23F4A9BF /* Wit.m */; };
+		D4CF740211090D9CC17352B0 /* WITRecordingSession.h in Headers */ = {isa = PBXBuildFile; fileRef = C9945A429210789062440126 /* WITRecordingSession.h */; };
+		E729025588B28DE720AFB087 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A4D9A54A31313FFF3379DD /* QuartzCore.framework */; };
+		EBBFFAC06540A70D2D77C38E /* WITCvad.h in Headers */ = {isa = PBXBuildFile; fileRef = 17E460B64FE5D8F6D97F032D /* WITCvad.h */; };
+		EFD27AA64AAA65786EF4774D /* WITCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC5B448416E61E5B38BBC2B /* WITCircleView.m */; };
+		F032D5DCFDCE7405C45B98A1 /* WITCvad.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFD69E7F6C35D0A7ED19C2F /* WITCvad.m */; };
+		F5EA22E328FAAB72716C2EDD /* WITVad.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D8AB70A4F0E9B903505CA71 /* WITVad.h */; };
+		F990829BFEC7D231700B535D /* WITMicButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 34C9A4ED87FF031D6056BDCB /* WITMicButton.h */; };
+		FA25D1B49BD44B5E59F17BB1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E176F0239EF9D353ABE9FA9 /* AudioToolbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00B554669E859855B6F3CB4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13C438F06F4369DFCBB7343D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6C303623012E3943C1BC833;
+			remoteInfo = "Pods-SpeakEasyApp-Wit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0113BDD73A19B6185407D5DD /* Pods-SpeakEasyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpeakEasyApp.release.xcconfig"; sourceTree = "<group>"; };
+		0CC07A6088BB346EB19861BB /* libPods-SpeakEasyApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SpeakEasyApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10FBD58BD7D2BAD5928A1398 /* Pods-SpeakEasyApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SpeakEasyApp-dummy.m"; sourceTree = "<group>"; };
+		14C3655D2A23D5C202652176 /* WITRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WITRecorder.h; path = Wit/WITRecorder.h; sourceTree = "<group>"; };
+		159720762E71AD4428AA9582 /* WITMicButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WITMicButton.m; path = Wit/WITMicButton.m; sourceTree = "<group>"; };
+		17BE03E4F7CBA5F7F178B071 /* Wit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Wit.h; path = Wit/Wit.h; sourceTree = "<group>"; };
+		17E460B64FE5D8F6D97F032D /* WITCvad.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WITCvad.h; path = Wit/WITCvad.h; sourceTree = "<group>"; };
+		1CB9ACF53BA62360BF62DFB9 /* WITCircleLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WITCircleLayer.m; path = Wit/WITCircleLayer.m; sourceTree = "<group>"; };
+		1D3669761ECE7C57B7E2C22E /* Pods-SpeakEasyApp-Wit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpeakEasyApp-Wit-Private.xcconfig"; sourceTree = "<group>"; };
+		1E176F0239EF9D353ABE9FA9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		2D8AB70A4F0E9B903505CA71 /* WITVad.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WITVad.h; path = Wit/WITVad.h; sourceTree = "<group>"; };
+		34C9A4ED87FF031D6056BDCB /* WITMicButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WITMicButton.h; path = Wit/WITMicButton.h; sourceTree = "<group>"; };
+		3D98A2375E8C5F6F077F5106 /* WITState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WITState.m; path = Wit/WITState.m; sourceTree = "<group>"; };
+		3F48D7601F1338623A103DFF /* WITCircleLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WITCircleLayer.h; path = Wit/WITCircleLayer.h; sourceTree = "<group>"; };
+		516D01177F1E9CC44573DA67 /* WITVad.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WITVad.m; path = Wit/WITVad.m; sourceTree = "<group>"; };
+		633536E639213C78C9DB0C29 /* WITCircleView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WITCircleView.h; path = Wit/WITCircleView.h; sourceTree = "<group>"; };
+		6F8923CA534FE146870B9366 /* Pods-SpeakEasyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpeakEasyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7195B4A2C9A8EF36AF5C6019 /* WITVadSimple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WITVadSimple.h; path = Wit/WITVadSimple.h; sourceTree = "<group>"; };
+		74854A4801476A25EC852CAD /* Pods-SpeakEasyApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpeakEasyApp-resources.sh"; sourceTree = "<group>"; };
+		776E713899B0AFB2DA4F9197 /* microphone.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = microphone.png; path = WitResources/Images/microphone.png; sourceTree = "<group>"; };
+		7D1348B774BCE603E1EEAA83 /* WITVadSimple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WITVadSimple.m; path = Wit/WITVadSimple.m; sourceTree = "<group>"; };
+		81B2941C32099348B675D164 /* Pods-SpeakEasyApp-Wit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SpeakEasyApp-Wit-dummy.m"; sourceTree = "<group>"; };
+		8AF9FA19DE72713497351B39 /* WITUploader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WITUploader.h; path = Wit/WITUploader.h; sourceTree = "<group>"; };
+		8D80C177F67FE4866AE7DB55 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93976A311791331CA2D40A79 /* Pods-SpeakEasyApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SpeakEasyApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		95259C7BA6B2D8C7FD7B090D /* Pods-SpeakEasyApp-Wit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpeakEasyApp-Wit.xcconfig"; sourceTree = "<group>"; };
+		960E272FF8C6C186E9F8F105 /* Pods-SpeakEasyApp-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SpeakEasyApp-environment.h"; sourceTree = "<group>"; };
+		96D39AE3E4EE6342ADA45087 /* RecordingSessionStarter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RecordingSessionStarter.h; path = Wit/RecordingSessionStarter.h; sourceTree = "<group>"; };
+		97E1D6E7A9CCBC9627E89306 /* WITVadTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WITVadTracker.h; path = Wit/WITVadTracker.h; sourceTree = "<group>"; };
+		9CF8F7D2179BDB4A49E3DF36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A1469DBBEF05B5AC7BBB05A6 /* WITVadTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WITVadTracker.m; path = Wit/WITVadTracker.m; sourceTree = "<group>"; };
+		A466A42E998532672310B702 /* WITState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WITState.h; path = Wit/WITState.h; sourceTree = "<group>"; };
+		A48D5AB9A96F49C37E7A845F /* WITContextSetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WITContextSetter.h; path = Wit/WITContextSetter.h; sourceTree = "<group>"; };
+		A5C27C453AFE4F115CC4C26D /* util.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = util.m; path = Wit/util.m; sourceTree = "<group>"; };
+		A9000341359D1B114243EDFC /* WITVadConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WITVadConfig.h; path = Wit/WITVadConfig.h; sourceTree = "<group>"; };
+		ADFD69E7F6C35D0A7ED19C2F /* WITCvad.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WITCvad.m; path = Wit/WITCvad.m; sourceTree = "<group>"; };
+		B0C8C02254F3AC2DDD914835 /* util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = util.h; path = Wit/util.h; sourceTree = "<group>"; };
+		B2A4D9A54A31313FFF3379DD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		B52F8B53041DE26D957C797C /* WITUploader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WITUploader.m; path = Wit/WITUploader.m; sourceTree = "<group>"; };
+		B70015543A1A7687429276C5 /* Pods-SpeakEasyApp-Wit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SpeakEasyApp-Wit-prefix.pch"; sourceTree = "<group>"; };
+		C4FBF7E762674CEFCB3467FC /* WITRecordingSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WITRecordingSession.m; path = Wit/WITRecordingSession.m; sourceTree = "<group>"; };
+		C9945A429210789062440126 /* WITRecordingSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WITRecordingSession.h; path = Wit/WITRecordingSession.h; sourceTree = "<group>"; };
+		CBC873552A310A76EAF023A1 /* Pods-SpeakEasyApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpeakEasyApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		CC50AC72FC53A34F23F4A9BF /* Wit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Wit.m; path = Wit/Wit.m; sourceTree = "<group>"; };
+		D34A46C0231DDC443C4A1B07 /* WitPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WitPrivate.h; path = Wit/WitPrivate.h; sourceTree = "<group>"; };
+		E155080D57935F346F957D08 /* libPods-SpeakEasyApp-Wit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SpeakEasyApp-Wit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E16F53D41F2825C93DFEB3E9 /* WITRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WITRecorder.m; path = Wit/WITRecorder.m; sourceTree = "<group>"; };
+		FBCF55E51D526E67AFD489CC /* WITContextSetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WITContextSetter.m; path = Wit/WITContextSetter.m; sourceTree = "<group>"; };
+		FEC5B448416E61E5B38BBC2B /* WITCircleView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WITCircleView.m; path = Wit/WITCircleView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCAA3A7107630C25EAF2C8ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9302A20AAC29936F218B7E74 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4F59FAA6D97BBACC4E4B787 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA25D1B49BD44B5E59F17BB1 /* AudioToolbox.framework in Frameworks */,
+				8DC602B9BE1E47C2A085A561 /* Foundation.framework in Frameworks */,
+				E729025588B28DE720AFB087 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4094483FEE666A2C5E688B2F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				776E713899B0AFB2DA4F9197 /* microphone.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4943E63B9668240C9A86D4EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CF9F17DFC06A839B40FC9F1 /* Wit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5C046EF777F3FF95E5F12E4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96AA3B0C2EBC648E19A500C8 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62920EA62FFA3A5B801B5382 /* Pods-SpeakEasyApp */ = {
+			isa = PBXGroup;
+			children = (
+				93976A311791331CA2D40A79 /* Pods-SpeakEasyApp-acknowledgements.markdown */,
+				CBC873552A310A76EAF023A1 /* Pods-SpeakEasyApp-acknowledgements.plist */,
+				10FBD58BD7D2BAD5928A1398 /* Pods-SpeakEasyApp-dummy.m */,
+				960E272FF8C6C186E9F8F105 /* Pods-SpeakEasyApp-environment.h */,
+				74854A4801476A25EC852CAD /* Pods-SpeakEasyApp-resources.sh */,
+				6F8923CA534FE146870B9366 /* Pods-SpeakEasyApp.debug.xcconfig */,
+				0113BDD73A19B6185407D5DD /* Pods-SpeakEasyApp.release.xcconfig */,
+			);
+			name = "Pods-SpeakEasyApp";
+			path = "Target Support Files/Pods-SpeakEasyApp";
+			sourceTree = "<group>";
+		};
+		8C8C3948B7F95AD5C6ADC350 = {
+			isa = PBXGroup;
+			children = (
+				8D80C177F67FE4866AE7DB55 /* Podfile */,
+				5C046EF777F3FF95E5F12E4B /* Frameworks */,
+				4943E63B9668240C9A86D4EE /* Pods */,
+				D3CAC794BB1908D5DC9191C6 /* Products */,
+				A5FFCBBBB5AF18EFD35E822C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8CF9F17DFC06A839B40FC9F1 /* Wit */ = {
+			isa = PBXGroup;
+			children = (
+				96D39AE3E4EE6342ADA45087 /* RecordingSessionStarter.h */,
+				3F48D7601F1338623A103DFF /* WITCircleLayer.h */,
+				1CB9ACF53BA62360BF62DFB9 /* WITCircleLayer.m */,
+				633536E639213C78C9DB0C29 /* WITCircleView.h */,
+				FEC5B448416E61E5B38BBC2B /* WITCircleView.m */,
+				A48D5AB9A96F49C37E7A845F /* WITContextSetter.h */,
+				FBCF55E51D526E67AFD489CC /* WITContextSetter.m */,
+				17E460B64FE5D8F6D97F032D /* WITCvad.h */,
+				ADFD69E7F6C35D0A7ED19C2F /* WITCvad.m */,
+				34C9A4ED87FF031D6056BDCB /* WITMicButton.h */,
+				159720762E71AD4428AA9582 /* WITMicButton.m */,
+				14C3655D2A23D5C202652176 /* WITRecorder.h */,
+				E16F53D41F2825C93DFEB3E9 /* WITRecorder.m */,
+				C9945A429210789062440126 /* WITRecordingSession.h */,
+				C4FBF7E762674CEFCB3467FC /* WITRecordingSession.m */,
+				A466A42E998532672310B702 /* WITState.h */,
+				3D98A2375E8C5F6F077F5106 /* WITState.m */,
+				8AF9FA19DE72713497351B39 /* WITUploader.h */,
+				B52F8B53041DE26D957C797C /* WITUploader.m */,
+				2D8AB70A4F0E9B903505CA71 /* WITVad.h */,
+				516D01177F1E9CC44573DA67 /* WITVad.m */,
+				A9000341359D1B114243EDFC /* WITVadConfig.h */,
+				7195B4A2C9A8EF36AF5C6019 /* WITVadSimple.h */,
+				7D1348B774BCE603E1EEAA83 /* WITVadSimple.m */,
+				97E1D6E7A9CCBC9627E89306 /* WITVadTracker.h */,
+				A1469DBBEF05B5AC7BBB05A6 /* WITVadTracker.m */,
+				17BE03E4F7CBA5F7F178B071 /* Wit.h */,
+				CC50AC72FC53A34F23F4A9BF /* Wit.m */,
+				D34A46C0231DDC443C4A1B07 /* WitPrivate.h */,
+				B0C8C02254F3AC2DDD914835 /* util.h */,
+				A5C27C453AFE4F115CC4C26D /* util.m */,
+				4094483FEE666A2C5E688B2F /* Resources */,
+				FB95F7C9A21724D972CA3D6B /* Support Files */,
+			);
+			path = Wit;
+			sourceTree = "<group>";
+		};
+		96AA3B0C2EBC648E19A500C8 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1E176F0239EF9D353ABE9FA9 /* AudioToolbox.framework */,
+				9CF8F7D2179BDB4A49E3DF36 /* Foundation.framework */,
+				B2A4D9A54A31313FFF3379DD /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A5FFCBBBB5AF18EFD35E822C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				62920EA62FFA3A5B801B5382 /* Pods-SpeakEasyApp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D3CAC794BB1908D5DC9191C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CC07A6088BB346EB19861BB /* libPods-SpeakEasyApp.a */,
+				E155080D57935F346F957D08 /* libPods-SpeakEasyApp-Wit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB95F7C9A21724D972CA3D6B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				95259C7BA6B2D8C7FD7B090D /* Pods-SpeakEasyApp-Wit.xcconfig */,
+				1D3669761ECE7C57B7E2C22E /* Pods-SpeakEasyApp-Wit-Private.xcconfig */,
+				81B2941C32099348B675D164 /* Pods-SpeakEasyApp-Wit-dummy.m */,
+				B70015543A1A7687429276C5 /* Pods-SpeakEasyApp-Wit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-SpeakEasyApp-Wit";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4BC6197319D0BAF4793319FC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F0AB3D2C0D57C6C07A821E /* RecordingSessionStarter.h in Headers */,
+				679683C751F7789854F0C85B /* WITCircleLayer.h in Headers */,
+				3EC9AE15564FBA70E975D351 /* WITCircleView.h in Headers */,
+				582EEA262AF103430E2A5FEA /* WITContextSetter.h in Headers */,
+				EBBFFAC06540A70D2D77C38E /* WITCvad.h in Headers */,
+				F990829BFEC7D231700B535D /* WITMicButton.h in Headers */,
+				80814DF9DFB1421D8C633F02 /* WITRecorder.h in Headers */,
+				D4CF740211090D9CC17352B0 /* WITRecordingSession.h in Headers */,
+				AA9B840FA9CAAC0A69432EF6 /* WITState.h in Headers */,
+				7905BA29BEB47246B5A09BDB /* WITUploader.h in Headers */,
+				F5EA22E328FAAB72716C2EDD /* WITVad.h in Headers */,
+				7FB714F42B2C31CF9C739BEF /* WITVadConfig.h in Headers */,
+				44683B68136CBA61131E1953 /* WITVadSimple.h in Headers */,
+				1D6E5E72E545FF2CFFB0DA4B /* WITVadTracker.h in Headers */,
+				59AAAA75E85F10FC40D9408B /* Wit.h in Headers */,
+				3CEDF68ED783A7A6ED7FC7CA /* WitPrivate.h in Headers */,
+				0FF0083A3AEA0A801CBA17B7 /* util.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		879E8C7D7581CCCD64879E52 /* Pods-SpeakEasyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DB38D5AFCB0B230A758DFF2 /* Build configuration list for PBXNativeTarget "Pods-SpeakEasyApp" */;
+			buildPhases = (
+				7FF3B64B1D8E17B77DC35FA5 /* Sources */,
+				CCAA3A7107630C25EAF2C8ED /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11854BC6DC9D2322EF3CFBF5 /* PBXTargetDependency */,
+			);
+			name = "Pods-SpeakEasyApp";
+			productName = "Pods-SpeakEasyApp";
+			productReference = 0CC07A6088BB346EB19861BB /* libPods-SpeakEasyApp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E6C303623012E3943C1BC833 /* Pods-SpeakEasyApp-Wit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 506BE1C9F1F16A69F7104768 /* Build configuration list for PBXNativeTarget "Pods-SpeakEasyApp-Wit" */;
+			buildPhases = (
+				5BCBC3B8F1C21D4BE5522C9B /* Sources */,
+				D4F59FAA6D97BBACC4E4B787 /* Frameworks */,
+				4BC6197319D0BAF4793319FC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SpeakEasyApp-Wit";
+			productName = "Pods-SpeakEasyApp-Wit";
+			productReference = E155080D57935F346F957D08 /* libPods-SpeakEasyApp-Wit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13C438F06F4369DFCBB7343D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 54FD2B09D8B4F4F46ADC5DE6 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8C8C3948B7F95AD5C6ADC350;
+			productRefGroup = D3CAC794BB1908D5DC9191C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				879E8C7D7581CCCD64879E52 /* Pods-SpeakEasyApp */,
+				E6C303623012E3943C1BC833 /* Pods-SpeakEasyApp-Wit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BCBC3B8F1C21D4BE5522C9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD871CDB949036B98FED7270 /* Pods-SpeakEasyApp-Wit-dummy.m in Sources */,
+				69C039F524BDAA3A3A12EE7C /* WITCircleLayer.m in Sources */,
+				EFD27AA64AAA65786EF4774D /* WITCircleView.m in Sources */,
+				6F6C15DEB8695427730A5BE9 /* WITContextSetter.m in Sources */,
+				F032D5DCFDCE7405C45B98A1 /* WITCvad.m in Sources */,
+				8F9277827F24AA0B2DA4FACC /* WITMicButton.m in Sources */,
+				05078CC2F85EF8D30C3096D5 /* WITRecorder.m in Sources */,
+				1DF13CF56558D53A9761FF65 /* WITRecordingSession.m in Sources */,
+				1921AE37B7445464BDB63F1A /* WITState.m in Sources */,
+				6461E8D9BB44B3F65E63AE06 /* WITUploader.m in Sources */,
+				0BCE05F9280F12EA336541AC /* WITVad.m in Sources */,
+				607CAF565E3595447033E085 /* WITVadSimple.m in Sources */,
+				37710E81AC6D1936260E5BC6 /* WITVadTracker.m in Sources */,
+				C3E9E7D40ECD4AD8E4F15A7F /* Wit.m in Sources */,
+				2B98C8284A6E6481EC232258 /* util.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF3B64B1D8E17B77DC35FA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B06C8965C11B75D319E78F9 /* Pods-SpeakEasyApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11854BC6DC9D2322EF3CFBF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SpeakEasyApp-Wit";
+			target = E6C303623012E3943C1BC833 /* Pods-SpeakEasyApp-Wit */;
+			targetProxy = 00B554669E859855B6F3CB4D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0ACABB4AE7B43798251CF112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0113BDD73A19B6185407D5DD /* Pods-SpeakEasyApp.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		26BA0EA791369A492D3B83D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		278B15C33F2060930956E041 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AD181744E6F393EC2577EE67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F8923CA534FE146870B9366 /* Pods-SpeakEasyApp.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B00D85301F309F585402C894 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D3669761ECE7C57B7E2C22E /* Pods-SpeakEasyApp-Wit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SpeakEasyApp-Wit/Pods-SpeakEasyApp-Wit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F42D3EB4C6BF5C1AF1DF9D41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D3669761ECE7C57B7E2C22E /* Pods-SpeakEasyApp-Wit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SpeakEasyApp-Wit/Pods-SpeakEasyApp-Wit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DB38D5AFCB0B230A758DFF2 /* Build configuration list for PBXNativeTarget "Pods-SpeakEasyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD181744E6F393EC2577EE67 /* Debug */,
+				0ACABB4AE7B43798251CF112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		506BE1C9F1F16A69F7104768 /* Build configuration list for PBXNativeTarget "Pods-SpeakEasyApp-Wit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42D3EB4C6BF5C1AF1DF9D41 /* Debug */,
+				B00D85301F309F585402C894 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54FD2B09D8B4F4F46ADC5DE6 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				278B15C33F2060930956E041 /* Debug */,
+				26BA0EA791369A492D3B83D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13C438F06F4369DFCBB7343D /* Project object */;
+}
