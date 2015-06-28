@@ -10,20 +10,26 @@ import UIKit
 
 class ViewController: UIViewController, UIWebViewDelegate, WitDelegate {
 
+  @IBOutlet var activityIndicator: UIActivityIndicatorView!
+  @IBOutlet var overlay: UIView!
   @IBOutlet var webView: UIWebView!
   let wit: Wit = Wit.sharedInstance()
   var isRecording: Bool = false
   var isLoaded: Bool = true
   var numberOfWebViews: Int = 0
   var webActions: [String] = []
+  var previousURL: String = ""
+  var hasTriedAction: Bool = false
   
   override func viewDidLoad() {
     super.viewDidLoad()
     webView.delegate = self
-    webView.loadRequest(NSURLRequest(URL: NSURL(string: "http://wikipedia.com")!))
+    webView.loadRequest(NSURLRequest(URL: NSURL(string: "http://news.ycombinator.com")!))
     addMicButton()
     wit.delegate = self
     wit.setContext(["state" : "news.ycombinator.com"])
+    overlay.alpha = 0.5
+    overlay.hidden = true
   }
 
   override func didReceiveMemoryWarning() {
@@ -42,18 +48,28 @@ class ViewController: UIViewController, UIWebViewDelegate, WitDelegate {
   // MARK: UIWebViewDelegate
   func webViewDidFinishLoad(webView: UIWebView) {
     isLoaded = true
-    webView.stringByEvaluatingJavaScriptFromString("document.getElementById('searchInput').value = 'Matt'")
-    numberOfWebViews--
+    if numberOfWebViews > 0 {
+      numberOfWebViews--
+    }
     println("Number of views: \(numberOfWebViews)")
     if numberOfWebViews == 0 {
-      println("Web Actions: \(webActions)")
       if webActions.count > 0 {
         let currentAction = webActions[0]
-        webView.stringByEvaluatingJavaScriptFromString(currentAction)
-        webActions.removeAtIndex(0)
-        println("Web Actions: \(webActions)")
+        let currentURL = webView.request!.mainDocumentURL!.absoluteString!
+        if previousURL != currentURL && hasTriedAction {
+          webActions.removeAtIndex(0)
+          hasTriedAction = false
+          if webActions.count > 0 {
+            webView.stringByEvaluatingJavaScriptFromString(webActions[0])
+          }
+        } else {
+          webView.stringByEvaluatingJavaScriptFromString(currentAction)
+          hasTriedAction = true
+        }
+        previousURL = currentURL
       }
     }
+    println("Web Views: \(webActions)")
   }
   
   func webViewDidStartLoad(webView: UIWebView) {
@@ -63,16 +79,21 @@ class ViewController: UIViewController, UIWebViewDelegate, WitDelegate {
   }
 
   func webView(webView: UIWebView, didFailLoadWithError error: NSError) {
-    numberOfWebViews--
+    if numberOfWebViews > 0 {
+      numberOfWebViews--
+    }
     println("Number of views: \(numberOfWebViews)")
   }
   
   // MARK: WitDelegate
   func witDidGraspIntent(outcomes: [AnyObject]!, messageId: String!, customData: AnyObject!, error e: NSError!) {
+    overlay.hidden = true
+    activityIndicator.stopAnimating()
     if outcomes != nil {
       let outcome: NSDictionary = outcomes[0] as! NSDictionary
       println(outcome)
-      handleOutcome(outcome)
+      // handleOutcome(outcome)
+      
     } else {
       println("BALLS")
     }
@@ -85,11 +106,13 @@ class ViewController: UIViewController, UIWebViewDelegate, WitDelegate {
   }
   
   func witDidStartRecording() {
-    println("Weeeee")
+    overlay.hidden = true
+    activityIndicator.stopAnimating()
   }
   
   func witDidStopRecording() {
-    println("Aweeee")
+    overlay.hidden = false
+    activityIndicator.startAnimating()
   }
   
   func startRecord() {
@@ -109,8 +132,29 @@ class ViewController: UIViewController, UIWebViewDelegate, WitDelegate {
       webView.loadRequest(NSURLRequest(URL: NSURL(string: newURL.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!)!))
       let clickResult = "document.querySelectorAll('#movie_results_ul a')[0].click()"
       webActions.append(clickResult)
+    } else if intent == "news" {
+      let search_query: NSString = outcome.valueForKeyPath("entities.search_query.value")![0] as! NSString
+      let newURL: String = "http://mobile.nytimes.com/search?query=\(search_query)&sort=rel"
+      webView.loadRequest(NSURLRequest(URL: NSURL(string: newURL.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!)!))
+    } else if intent == "youtube" {
+      let search_query: NSString = outcome.valueForKeyPath("entities.search_query.value")![0] as! NSString
+      let newURL: String = "https://www.youtube.com/results?search_query=\(search_query)"
+      webView.loadRequest(NSURLRequest(URL: NSURL(string: newURL.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!)!))
+      let clickResult = "document.querySelector('a[aria-label*=\"\(search_query)\"]').click()"
+      webActions.append(clickResult)
+    } else if intent == "restaurants" {
+      let location: NSString = outcome.valueForKeyPath("entities.location.value")![0] as! NSString
+      let search_query: NSString = outcome.valueForKeyPath("entities.local_search_query.value")![0] as! NSString
+      let newURL: String = "https://www.yelp.com/search?find_desc=\(search_query)&find_loc=\(location)"
+      webView.loadRequest(NSURLRequest(URL: NSURL(string: newURL.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!)!))
+    } else if intent == "navigate" {
+      var site: NSString = outcome.valueForKeyPath("entities.url.value")![0] as! NSString
+      if !site.containsString(".com") {
+        site = (site as String) +  ".com"
+      }
+      let newURL: String = "http://\(site)"
+      webView.loadRequest(NSURLRequest(URL: NSURL(string: newURL.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!)!))
     }
-    let search_query: NSString = outcome.valueForKeyPath("entities.search_query.value")![0] as! NSString
   }
 }
 

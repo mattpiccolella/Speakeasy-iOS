@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord, error: nil)
     AVAudioSession.sharedInstance().setActive(true, error: nil)
-    Wit.sharedInstance().accessToken = "MAEKVOKFKP4F5JAHPO4CEQ54SND5WJL6"
+    Wit.sharedInstance().accessToken = "4I537542AYSO7HCNF2UL5MOM5NE7MLV5"
     //Wit.sharedInstance().detectSpeechStop = WITVadConfig.DetectSpeechStop
     return true
   }

@@ -20,21 +20,46 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="572"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nvj-Rg-0Lb">
+                                <rect key="frame" x="0.0" y="28" width="600" height="572"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ycH-ll-CPt">
+                                        <rect key="frame" x="275" y="261" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Gx0-ja-3Eq"/>
+                                            <constraint firstAttribute="height" constant="50" id="iBN-vx-gil"/>
+                                        </constraints>
+                                        <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="ycH-ll-CPt" firstAttribute="centerX" secondItem="nvj-Rg-0Lb" secondAttribute="centerX" id="DmW-tO-68r"/>
+                                    <constraint firstItem="ycH-ll-CPt" firstAttribute="centerY" secondItem="nvj-Rg-0Lb" secondAttribute="centerY" id="xRr-JX-yiM"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vey-B2-35n" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="7Ux-4h-Rg6"/>
-                            <constraint firstAttribute="centerY" secondItem="vey-B2-35n" secondAttribute="centerY" constant="-14" id="C0z-rx-yen"/>
-                            <constraint firstAttribute="width" secondItem="vey-B2-35n" secondAttribute="width" id="STk-FH-KFY"/>
-                            <constraint firstAttribute="centerX" secondItem="vey-B2-35n" secondAttribute="centerX" id="qrU-uf-TFu"/>
+                            <constraint firstItem="vey-B2-35n" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="9pq-6X-Fes"/>
+                            <constraint firstItem="nvj-Rg-0Lb" firstAttribute="top" secondItem="vey-B2-35n" secondAttribute="top" id="GNO-zh-fyZ"/>
+                            <constraint firstItem="nvj-Rg-0Lb" firstAttribute="leading" secondItem="vey-B2-35n" secondAttribute="leading" id="WVU-mm-Fdo"/>
+                            <constraint firstItem="vey-B2-35n" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="a1J-2e-32s"/>
+                            <constraint firstItem="nvj-Rg-0Lb" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="fc5-Fr-iXx"/>
+                            <constraint firstItem="vey-B2-35n" firstAttribute="trailing" secondItem="nvj-Rg-0Lb" secondAttribute="trailing" id="pZX-t9-rwM"/>
+                            <constraint firstItem="nvj-Rg-0Lb" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="vZE-t6-pQv"/>
+                            <constraint firstAttribute="trailing" secondItem="nvj-Rg-0Lb" secondAttribute="trailing" id="wGt-BF-fIA"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="ycH-ll-CPt" id="dKF-b4-Gh1"/>
+                        <outlet property="overlay" destination="nvj-Rg-0Lb" id="hak-FT-lLP"/>
                         <outlet property="webView" destination="vey-B2-35n" id="bkt-1D-fkP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="310" y="140"/>
         </scene>
     </scenes>
 </document>
